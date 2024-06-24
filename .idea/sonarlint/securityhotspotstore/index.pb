@@ -1,11 +1,4 @@
 
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-<
-src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
-:
-
-src/App.js,1/e/1e43fa63aecd2127be034b3fb9d4caa172275714
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 w
@@ -132,3 +125,6 @@ w
 G.idea/sonarlint/issuestore/6/e/6e9644ddf83ab52f39902ecdbfdf4118285ac40c,4/2/4291a6ab95c696f29dcedea66516b99a0fd0f28a
 w
 G.idea/sonarlint/issuestore/e/0/e09c4c8818f20371792fe576a3c8749f91579b05,7/2/7256e5d6190ca07635a446b79e2ae6fb0e385ab7
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
