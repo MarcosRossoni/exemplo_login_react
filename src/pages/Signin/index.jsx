@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Content, Label, LabelError, LabelSignuo, Strong} from "./styles";
+import {Container, Content, Label, LabelError, LabelSignin, LabelSignuo, Strong} from "./styles";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import {Link, useNavigate} from "react-router-dom";
@@ -9,7 +9,7 @@ export default Signin;
 
 function Signin(props) {
 
-    const { signin } = useAuth()
+    const { singnin } = useAuth()
     const navigate = useNavigate();
 
     const [email, setEmail] = useState('');
@@ -22,7 +22,7 @@ function Signin(props) {
             return
         }
 
-        const res = signin(email, password);
+        const res = singnin(email, password);
 
         if (res) {
             setError(res)
@@ -49,12 +49,12 @@ function Signin(props) {
                 />
                 <LabelError>{error}</LabelError>
                 <Button Text="Entrar" onClick={handleLogin}/>
-                <LabelSignuo>
+                <LabelSignin>
                     Não tem uma conta?
                     <Strong>
                         <Link to="/signup">&nbsp;Registre-se</Link>
                     </Strong>
-                </LabelSignuo>
+                </LabelSignin>
             </Content>
         </Container>
 );

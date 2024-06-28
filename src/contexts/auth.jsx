@@ -2,7 +2,7 @@ import {createContext, useEffect, useState} from "react";
 
 export const AuthContext = createContext({});
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({children}) => {
     const [user, setUser] = useState();
 
     useEffect(() => {
@@ -19,13 +19,17 @@ export const AuthProvider = ({ children }) => {
     }, [])
 
     const singnin = (email, password) => {
-        const usersStorage = JSON.parse(localStorage.getItem("users_db"));
+        console.log(localStorage.getItem("user_token"))
+        const usersStorage = JSON.parse(localStorage.getItem("user_token"));
         const hasUser = JSON.parse(usersStorage)?.filter((user) => user.email === email);
+
+        console.log(usersStorage)
+        console.log(hasUser)
 
         if (hasUser?.length) {
             if (hasUser[0].email === email && hasUser[0].email === password) {
                 const token = Math.random().toString(36);
-                localStorage.setItem("user_token", JSON.stringify({ email, token }));
+                localStorage.setItem("user_token", JSON.stringify({email, token}));
                 setUser({email, password})
                 return;
             } else {

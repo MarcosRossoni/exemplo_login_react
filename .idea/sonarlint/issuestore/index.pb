@@ -31,8 +31,6 @@ E
 src/hooks/useAuth.jsx,f/5/f5f061eb6395b9bd746d4603a288bea81eb68cc4
 O
 src/components/Button/index.jsx,e/2/e2fe8ee7f265100537e09d3bb446283801ceb185
-P
- src/components/Button/styles.jsx,c/6/c688e7cfc36bae916f04ca5ede37de0b28954d23
 N
 src/components/Input/index.jsx,6/c/6ce10fe595d227e250b5c4a9f355ac9eec70381e
 N
